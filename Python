@@ -1,0 +1,31 @@
+import math
+
+name = input("What is your name?\n")
+print(f"Hello {name}.")
+
+student_id = input("What is your Student ID?\n")
+print(f"Your ID is {student_id}.")
+
+print()
+
+total_seconds = int(input("Enter total number of seconds:\n"))
+
+hours = total_seconds // 3600
+minutes = (total_seconds % 3600) // 60
+seconds = total_seconds % 60
+
+print(f"{total_seconds} seconds is {hours} hours, {minutes} minutes, and {seconds} seconds.")
+
+print()
+
+x1 = float(input("Enter x1:\n"))
+y1 = float(input("Enter y1:\n"))
+x2 = float(input("Enter x2:\n"))
+y2 = float(input("Enter y2:\n"))
+
+distance = math.sqrt((x2 - x1)**2 + (y2 - y1)**2)
+
+print(f"The distance between the points is {distance}")
+
+print()
+print("*******\n *****\n ***\n *")
